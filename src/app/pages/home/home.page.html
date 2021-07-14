@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button data-cy="ion-button-viewuser">Ver Usuario</ion-button>
+  <ion-item>
+    <ion-label position="floating"></ion-label>
+    <ion-input class="input-text" type="text"></ion-input>
+  </ion-item>
+  <ion-card>
+    <ion-card-title>Bem-vindo ao meu nosso app</ion-card-title>
+    <ion-card-subtitle>Hora dos testes...</ion-card-subtitle>
+  </ion-card>
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Testando Arrays</ion-label>
+    </ion-list-header>
+    <ion-item data-cy="ion-item-listUsers" *ngFor="let item of listUsers" > 
+      <ion-label>{{ item.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
